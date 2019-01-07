@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Animals List';
+  public clickedEvent: Event;
+
+  childEventClicked(event: Event) {
+      console.log('AppComponent:AppComponent()');
+    this.clickedEvent = event;
+  }
 }
