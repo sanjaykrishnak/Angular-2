@@ -8,6 +8,7 @@ import { AnimalSubmitComponent } from './animal/animal-submit.component';
 import { AnimalService } from './service/animal.service';
 import { EventsComponent } from './events/events.component';
 import { EventdetailsComponent } from './events/eventdetails.component';
+import { EventsHomeComponent } from './events/events-home.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { EventdetailsComponent } from './events/eventdetails.component';
     AnimalListComponent,
     AnimalSubmitComponent,
     EventsComponent,
-    EventdetailsComponent
+    EventdetailsComponent,
+    EventsHomeComponent
   ],
   imports: [
     BrowserModule,

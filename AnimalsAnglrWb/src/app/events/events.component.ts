@@ -12,10 +12,13 @@ export class EventsComponent implements OnInit {
       events: Event[] = [];
       public readonly numEvents: number = 4;
 
+
   constructor() { this.getEvents(); this.getNumEvents(); }
 
   ngOnInit() {
   }
+
+
 
   onClick(event: Event): void {
     console.log('EventsComponent:onClick()');
