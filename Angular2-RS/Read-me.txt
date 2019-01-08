@@ -1,0 +1,8 @@
+http://localhost:8090/Angular2-RS/rest/animals/1
+http://localhost:8090/Angular2-RS/rest/animals/count
+
+http://localhost:8090/Angular2-RS/rest/animals
+
+http://localhost:8090/Angular2-RS/rest/animals/testJsonAnimal
+
+http://localhost:8090/Angular2-RS/rest/animals/testJson
