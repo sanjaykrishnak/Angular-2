@@ -1,0 +1,9 @@
+{
+  "/animals/*": {
+  "target": "http://192.168.1.169:8090/Angular2-RS/rest/animals/testJsonAnimal",
+  "secure": false,
+  "changeOrigin": true,
+  "logLevel": "debug",
+  "pathRewrite": {"^/animals" : ""}
+  }
+}

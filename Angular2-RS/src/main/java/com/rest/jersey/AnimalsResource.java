@@ -119,8 +119,8 @@ public class AnimalsResource {
 
 		Animal myjson = new Animal();
 		myjson.setId("1");
-		myjson.setName("Sanjay");
-		myjson.setType("Student");
+		myjson.setName("Lion");
+		myjson.setType("Cruel");
 		
         
         System.out.println("=================================");
