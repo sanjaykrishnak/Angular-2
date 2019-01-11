@@ -7,3 +7,19 @@ http://localhost:8090/Angular2-RS/rest/animals/testJsonAnimal
 
 http://localhost:8090/Angular2-RS/rest/animals/testJson -> This is not working even in Restful-Services
 
+GIT set-up,
+
+Set-up a repository in the directory,
+
+Go to GIT Repository Perspective
+
+Angular 7 version POST for Content-Type application/json is not working, because of CORS setting, it resets back to text/plain.
+
+https://stackoverflow.com/questions/39689386/fetch-post-json-data-application-json-change-to-text-plain
+
+When a webservice is configured to consume application/json, the above will not work, so change it to text/plain, change the headers in the AnimalService
+to text/plain, and it is working. At server side, use toold for converting JSON to objects and handle the stuff.
+
+
+
+

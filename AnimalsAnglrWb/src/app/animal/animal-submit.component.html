@@ -1,3 +1,21 @@
-<p>
-  animal-submit works!
-</p>
+<div class="col-md-6">
+  <h2 class="text-center">Add User</h2>
+<form>
+  <div class="form-group">
+    <label for="Id">Animal Id:</label>
+    <input [(ngModel)]="animal.id" name="id"  >
+  </div>
+
+  <div class="form-group">
+    <label for="Name">Animal Name:</label>
+    <input [(ngModel)]="animal.name"  name="name" >
+  </div>
+
+  <div class="form-group">
+    <label for="Type">Animal Type:</label>
+   <input [(ngModel)]="animal.type" name="type">
+  </div>
+
+  <button class="btn btn-success" (click)="createAnimal()">Create</button>
+</form>
+</div>

@@ -16,6 +16,9 @@ public class AnimalService {
 	public void createAnimal(Animal animal) {
 		animalDao.getAnimals().put(animal.getId(), animal);
 	}
+	public void createAnimal(String animal) {
+		//
+	}
 
 	public Animal getAnimal(String id) {
 		return animalDao.getAnimals().get(id);

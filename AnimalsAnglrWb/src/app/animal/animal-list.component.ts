@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AnimalService} from '../service/animal.service';
 import { Animal} from '../model/animal';
-import { map } from 'rxjs/operators';
-import { Router } from '@angular/router';
+
 
 
 @Component({
@@ -14,7 +13,7 @@ export class AnimalListComponent implements OnInit {
 
     private animalService: AnimalService;
     animal: Animal;
-  constructor(private router: Router, as: AnimalService) {
+  constructor(as: AnimalService) {
       console.log('AnimalListComponent;constructor()');
       this.animalService = as;
       this.getAnimals();

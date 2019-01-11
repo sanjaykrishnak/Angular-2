@@ -133,5 +133,26 @@ public class AnimalsResource {
 //        return "string returned";
         return myjson;
     }
+	
+	@POST
+	@Path("create")
+	@Consumes({MediaType.APPLICATION_JSON})
+	public void create(Animal anm)
+	{
+        System.out.println("=================================");
+        System.out.println("create " + anm.getId());
+        System.out.println("=================================");
+	       try
+	       {
+	    	   animalService.createAnimal(anm);
+	    	   
+	    	 
+	       }catch(Exception e)
+	       {
+	       		e.printStackTrace();
+	       		
+	       }
+	       
+	    }
 
 }
