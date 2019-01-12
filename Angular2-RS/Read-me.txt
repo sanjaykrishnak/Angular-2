@@ -13,6 +13,13 @@ Set-up a repository in the directory,
 
 Go to GIT Repository Perspective
 
+1. Initialize GIT Repository in the directory,
+2. Go to Perspective of GIT, and go to Branches/Local. Create a new branch.
+3. GIT Repository, Switch to (from the context menu) and select the branch you want to check-in the code
+4. 
+
+
+
 Angular 7 version POST for Content-Type application/json is not working, because of CORS setting, it resets back to text/plain.
 
 https://stackoverflow.com/questions/39689386/fetch-post-json-data-application-json-change-to-text-plain
