@@ -16,7 +16,9 @@ Go to GIT Repository Perspective
 1. Initialize GIT Repository in the directory,
 2. Go to Perspective of GIT, and go to Branches/Local. Create a new branch.
 3. GIT Repository, Switch to (from the context menu) and select the branch you want to check-in the code
-4. 
+4. From the context menu, Team > Commit, you will get a GIT Staging window. YOu will see Unstaged-Changes, Select the file
+	and drag it to Staged changes.
+5. Commit and Push putting the commit message.
 
 
 
