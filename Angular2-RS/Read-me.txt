@@ -16,7 +16,7 @@ Go to GIT Repository Perspective
 1. Initialize GIT Repository in the directory,
 2. Go to Perspective of GIT, and go to Branches/Local. Create a new branch.
 3. GIT Repository, Switch to (from the context menu) and select the branch you want to check-in the code
-4. From the context menu, Team > Commit, you will get a GIT Staging window. YOu will see Unstaged-Changes, Select the file
+4. From the context menu, Team > Commit, you will get a GIT Staging window. You will see Unstaged-Changes, Select the file
 	and drag it to Staged changes.
 5. Commit and Push putting the commit message.
 
@@ -27,7 +27,17 @@ Angular 7 version POST for Content-Type application/json is not working, because
 https://stackoverflow.com/questions/39689386/fetch-post-json-data-application-json-change-to-text-plain
 
 When a webservice is configured to consume application/json, the above will not work, so change it to text/plain, change the headers in the AnimalService
-to text/plain, and it is working. At server side, use toold for converting JSON to objects and handle the stuff.
+to text/plain, and it is working. At server side, use toold for converting JSON to objects and handle the stuff. 
+
+
+
+---------Finally got it working ----------------------------------------------------
+Changed the tomcat version to 8.5.32 which supports  JDK 1.8 and the post also is working fine.
+
+http://192.168.1.169:8080/Angular2-RS/
+
+Create Animal is working fine.
+
 
 
 
