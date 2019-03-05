@@ -1,8 +1,6 @@
 <p>
-<li>
-    {{animal.id}}
-    {{animal.name}}
-    {{animal.type}}
+<li  *ngFor="let animal of animals; index as i;">
+    {{i}} {{animal.id}} {{animal.name}} {{animal.type}}
 </li>
 
 </p>

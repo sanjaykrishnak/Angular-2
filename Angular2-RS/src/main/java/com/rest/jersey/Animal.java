@@ -2,7 +2,7 @@ package com.rest.jersey;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement
+//@XmlRootElement
 public class Animal {
 	private String id;
 	private String name;

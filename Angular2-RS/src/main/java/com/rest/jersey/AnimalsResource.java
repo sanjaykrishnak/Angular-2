@@ -36,6 +36,7 @@ public class AnimalsResource {
 	}
 
 	@GET
+	@Path("listAnimals")
 	@Produces({ MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON })
 	public List<Animal> getAnimals() {
 		System.out.println("1.AnimalsResource:getAnimals():->******************************************************");
@@ -45,7 +46,7 @@ public class AnimalsResource {
 	}
 
 	@GET
-	@Produces(MediaType.TEXT_XML)
+	@Produces(MediaType.APPLICATION_JSON)
 	public List<Animal> getAnimalsAsHtml() {
 		System.out.println("getAnimalsAsHtml()");
 		return animalService.getAnimalAsList();
@@ -60,19 +61,25 @@ public class AnimalsResource {
 	}
 
 	@POST
+	@Path("createAnimal")
 	@Produces(MediaType.TEXT_HTML)
 	@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
 	public void createAnimal(@FormParam("id") String id,
 			@FormParam("animalname") String name,
 			@FormParam("animaltype") String type,
 			@Context HttpServletResponse servletResponse) throws IOException {
+     
+		System.out.println("=================================");
+        System.out.println("createAnimal " + id);
+        System.out.println("=================================");
+        
 		Animal animal = new Animal(id, name, type);
 		animalService.createAnimal(animal);
-		servletResponse.sendRedirect("./animals/");
+		//servletResponse.sendRedirect("./animals/");
 	}
 	
 	// URI: http://localhost:8080/RestService-1.0/rest/animals/1 { It will get the animal that is preloaded}
-	@Path("{animal}")
+	//@Path("{animal}")
 	public AnimalResource getAnimal(@PathParam("animal") String id) 
 	{
 		System.out.println("3.AnimalsResource:getAnimal():->******************************************************");
@@ -137,6 +144,7 @@ public class AnimalsResource {
 	@POST
 	@Path("create")
 	@Consumes({MediaType.APPLICATION_JSON})
+	//@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
 	public void create(Animal anm)
 	{
         System.out.println("=================================");

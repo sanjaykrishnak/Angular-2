@@ -12,7 +12,7 @@ import { Animal} from '../model/animal';
 export class AnimalListComponent implements OnInit {
 
     private animalService: AnimalService;
-    animal: Animal;
+    animals:any = [];
   constructor(as: AnimalService) {
       console.log('AnimalListComponent;constructor()');
       this.animalService = as;
@@ -24,7 +24,7 @@ export class AnimalListComponent implements OnInit {
   getAnimals() {
       console.log('AnimalListComponent:getAnimals()');
       return  this.animalService.getAnimals().subscribe(data => {
-        this.animal = data;
+        this.animals = data;
       });
     }
 
