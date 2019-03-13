@@ -36,7 +36,7 @@ Changed the tomcat version to 8.5.32 which supports  JDK 1.8 and the post also i
 
 http://192.168.1.169:8080/Angular2-RS/
 
-Create Animal is working fine.
+Create Animal is working fine. Both get and post are working,, all the problem with is versioning of java and tomcat.
 
 
 

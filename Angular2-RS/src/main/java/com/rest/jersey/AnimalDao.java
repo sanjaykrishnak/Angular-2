@@ -7,15 +7,18 @@ import java.util.Map;
 public enum AnimalDao {
 	instance;
 
-	private Map<String, Animal> animals = new HashMap<String, Animal>();
-
-	private AnimalDao() {
-
-		//pumping-in some default data
+	public static Map<String, Animal> animals = new HashMap<String, Animal>();
+	
+	static
+	{
 		Animal animal = new Animal("1", "Lion", "Wild");
-		animals.put("1", animal);
+		AnimalDao.animals.put("1", animal);
 		animal = new Animal("2", "Crocodile", "Wild");
 		animals.put("2", animal);
+		
+	}
+
+	private AnimalDao() {
 
 	}
 
